@@ -1,0 +1,26 @@
+body{
+ color: blue;
+ font-family:unbuntu, arial, verdana;
+ width: 600px;
+ height: 500px;
+ padding:15px;
+ text-align:center;
+}
+#form{
+	width:50%;
+	height: 40%;
+	margin: 100px auto;
+	padding:20px;
+	border:10px solid skyblue;
+    background-color:#FFDDCC;
+	float:left;
+	float:right;
+	border-radius: 2em;
+	box-shadow:3em;
+	text-align:center;
+}
+p{
+color: red;
+text-align: center;
+font-family: Algerian;
+}
