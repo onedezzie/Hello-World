@@ -1,0 +1,51 @@
+<?php
+function doCalculation()
+	{
+		$x =$_POST['n1'];
+		$y =$_POST['n2'];
+		$operator =$_POST['opt'];
+
+if ($operator=="add")
+		echo $x + $y;
+	else if($operator=="sub")
+		echo $x-$y;
+	else if ($operator=="mul") 
+		echo $x * $y;
+		
+		else {
+		   if($y!=0)
+			echo $x/$y;
+		 else 
+			echo "Undefined";
+			}
+	}
+		
+?>
+
+<html>
+	<head>
+	<title>Simple Calculator</title>
+	<link rel="stylesheet" href="style.css"/>
+	</head>
+	
+	<div id ="form">
+	<body>
+	<form action="" method="POST">
+	<b><p> The Simple Calculator </p></b>
+	<b>First Number:</b><input type="text" value="" name="n1"> <br/><br/>
+	<b>Second Number:</b><input type="text" value="" name ="n2"><br/><br/>
+	<strong>Select Operator:</strong>
+	<select name="opt">
+		<option value="add"> Addition</option>
+		<option value="sub"> Subtraction</option>
+		<option value="mul"> Multiplication</option>
+		<option value="divide"> Division</option>
+	
+	</select><br/><br/>
+	<b>Answer:</b><input type ="text" name ="ans" value ="<?php  doCalculation() ?> "/>
+
+	<input type="submit" name="sub" value ="Calculate"/>
+	</form>
+	</div>
+	</body>
+<html>
